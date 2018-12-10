@@ -47,14 +47,14 @@ namespace lab_12
             {
                 figures[CurrentFigureIndex] = new CRectangle(graphics,
                 pnMain.Width / 2, pnMain.Height / 2, 100, 50);
-                cbFigureType.Items.Add("Фігура №" + (FiguresCount).ToString() +
+                cbCircle.Items.Add("Фігура №" + (FiguresCount).ToString() +
                     " [прямокутник]");
             }
             else if (cbFigureType.SelectedIndex == 2)
             {
                 figures[CurrentFigureIndex] = new CTriangle(graphics, 
                     pnMain.Width / 2, pnMain.Height / 2, 100);
-                cbFigureType.Items.Add("Фігура №" + (FiguresCount).ToString() + 
+                cbCircle.Items.Add("Фігура №" + (FiguresCount).ToString() + 
                     " [трикутник]");
             }
             figures[CurrentFigureIndex].Show();
